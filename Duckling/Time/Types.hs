@@ -550,7 +550,8 @@ runDayOfTheMonthPredicate n = series
       rounded = roundMonth time
       Time.UTCTime day _ = start time
       (_, _, dayOfMonth) = Time.toGregorian day
-      anchor = if dayOfMonth <= n then rounded else addMonth 1 rounded
+      -- modified at 2024.04.23, interpret day of month as current month
+      anchor = if dayOfMonth <= n then rounded else addMonth 0 rounded
 
 runMonthPredicate :: Int -> SeriesPredicate
 runMonthPredicate n = series

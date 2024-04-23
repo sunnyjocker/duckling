@@ -772,20 +772,17 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("<named-day> <day-of-month> (ordinal)",
         Classifier{okData =
-                     ClassData{prior = -0.6931471805599453, unseen = -1.791759469228055,
-                               likelihoods =
-                                 HashMap.fromList
-                                   [("named-dayordinal (digits)", -0.916290731874155),
-                                    ("day", -0.916290731874155)],
-                               n = 1},
-                   koData =
-                     ClassData{prior = -0.6931471805599453, unseen = -1.791759469228055,
+                     ClassData{prior = 0.0, unseen = -2.0794415416798357,
                                likelihoods =
                                  HashMap.fromList
                                    [("absorption of , after named dayordinal (digits)",
-                                     -0.916290731874155),
-                                    ("day", -0.916290731874155)],
-                               n = 1}}),
+                                     -1.252762968495368),
+                                    ("named-dayordinal (digits)", -1.252762968495368),
+                                    ("day", -0.8472978603872037)],
+                               n = 2},
+                   koData =
+                     ClassData{prior = -infinity, unseen = -1.3862943611198906,
+                               likelihoods = HashMap.fromList [], n = 0}}),
        ("<duration> ago",
         Classifier{okData =
                      ClassData{prior = 0.0, unseen = -1.6094379124341003,
